@@ -1,0 +1,23 @@
+git config --global user.name csw
+git config --global user.email leeg0617@naver.com
+git config --global core.editor vi
+
+
+
+
+git log 전에 작업했던 것 확인
+ 
+add
+status
+
+
+git commit --amend /되돌리기
+
+git checkout -- 05-26.txt /commit전으로 되돌리기
+
+git branch "브렌치이름"  /브렌치 생성
+git checkout "브렌치이름" /브랜치로 이동
+git branch /현재 브랜치 확인
+git checkout -b 브렌치 이름 /브렌치 생성 & 변환
+
+git reset
