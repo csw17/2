@@ -1,25 +1,22 @@
 package fklfdklsp;
 import java.util.Scanner;
 public class GradeExam {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner scn=new Scanner(System.in);
-		System.out.println("수학, 과학, 영어");
-		Grade me=new Grade();
-		me.math=scn.nextInt();
-		me.science=scn.nextInt();
-		me.english=scn.nextInt();
-		System.out.println("평균"+me.average());
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("수학, 과학, 영어 순으로 3개의 점수 입력>>");
+		Grade me = new Grade();
+		me.math = scanner.nextInt();
+		me.science = scanner.nextInt();
+		me.english = scanner.nextInt();
+		System.out.println("평균은 " + me.average()); // average()는 평균을 계산하여 리턴
 	}
-
 }
 class Grade{
 	int math;
 	int science;
 	int english;
-	
-	public class average(){
-		return (math+science+english/3);
+	public int average() {
+		return (math+science+english)/3;
 	}
 }
+
